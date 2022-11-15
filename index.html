@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML tags learning</title>
+  </head>
+  <body>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <div>
+        <p><label for="name">Имя</label></p>
+        <input
+          placeholder="Имя"
+          tabindex="1"
+          type="text"
+          id="name"
+          name="username"
+        />
+      </div>
+      <div>
+        <p><label for="password">Пароль</label></p>
+        <input
+          placeholder="Пароль"
+          tabindex="2"
+          type="password"
+          id="password"
+          name="password"
+        />
+      </div>
+      <div>
+        <p><label for="tel">Телефон</label></p>
+        <input tabindex="3" placeholder="Телефон" type="tel" id="tel" />
+      </div>
+      <div>
+        <p><label for="sex">Пол</label></p>
+        <div>
+          <input
+            checked
+            tabindex="4"
+            type="radio"
+            value="Мужской"
+            name="gender"
+          />Мужской
+        </div>
+        <div>
+          <input
+            tabindex="4"
+            type="radio"
+            value="Женский"
+            name="gender"
+          />Женский
+        </div>
+      </div>
+      <div>
+        <p>Имущество</p>
+        <div>
+          <input tabindex="5" type="checkbox" name="bike" value="yes" />Велик
+        </div>
+        <div>
+          <input tabindex="6" type="checkbox" name="car" value="yes" />Машина
+        </div>
+        <div>
+          <input
+            tabindex="7"
+            disabled
+            type="checkbox"
+            name="house"
+            value="yes"
+          />Квартира
+        </div>
+      </div>
+      <p>Дополнительная информация</p>
+      <textarea tabindex="8" name="textarea" id=""></textarea>
+      <p>Прикрепить фото</p>
+      <input tabindex="9" type="file" name="userphoto" />
+      <p>Любимый цвет</p>
+      <select tabindex="10" name="color" id="color">
+        <option selected value="red">Красный</option>
+        <option value="yellow">Желтый</option>
+        <option value="green">Зелёный</option>
+      </select>
+      <p>Действия</p>
+      <button tabindex="11" type="submit">Отправить</button>
+      <button tabindex="12" type="reset">Очистить</button>
+    </form>
+  </body>
+</html>
